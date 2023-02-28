@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <h1 class="animate__animated animate__flash ">FREE CALCULATOR</h1>
+   
+    <div class="vic1">
+        <div class="vic6a">
+
+        <div id="vic2" class="animate__animated animate__flash "><input type="number" placeholder="Input First Number" id="firstValue"></div> 
+        <div></div> <br>  
+        <div id="vic2"><input type="number" placeholder="Input Second Number" id="secondValue"></div> 
+
+
+        <div id="result"></div>
+        <marquee behavior="" direction="left"><h4><strong>CHECK RESULT</strong></h4></marquee>        
+        </div>
+        
+
+        <div class="vic6">
+            <div id="vic3"> <button onclick="multiply()"><b>Multiply</b></button> </div>   
+            <div id="vic3"> <button onclick="subtract()"><b>Subtration</b></button> </div>
+            <div id="vic3"> <button onclick="divide()"><b>Division</b></button> </div>
+            <div id="vic3"> <button onclick="add()"><b>Addition</b></button> </div>
+        </div>
+    </div>  
+    
+       
+    <script>
+        function multiply() {
+            var numberOne = document.getElementById("firstValue").value;
+            var numberTwo = document.getElementById("secondValue").value;
+            var answer = numberOne * numberTwo;
+                result.innerHTML = answer         
+        }
+        function subtract() {
+            var numberOne = document.getElementById("firstValue").value;
+            var numberTwo = document.getElementById("secondValue").value;
+            var answer = numberOne - numberTwo;
+                result.innerHTML = answer         
+        }
+        function divide() {
+            var numberOne = document.getElementById("firstValue").value;
+            var numberTwo = document.getElementById("secondValue").value;
+            var answer = numberOne / numberTwo;
+                result.innerHTML = answer         
+        }
+        function add() {
+            var numberOne = document.getElementById("firstValue").value;
+            var numberTwo = document.getElementById("secondValue").value;
+            var answer = Number(numberOne) + Number(numberTwo);
+                result.innerHTML = answer
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
