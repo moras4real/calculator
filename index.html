@@ -41,26 +41,61 @@
         function multiply() {
             var numberOne = document.getElementById("firstValue").value;
             var numberTwo = document.getElementById("secondValue").value;
-            var answer = numberOne * numberTwo;
-                result.innerHTML = answer         
+             if (numberOne == "" || numberTwo == "") {
+                    var error = "Error";
+                    result.innerHTML=error;
+                    result.style.color = "red"
+                    result.style.fontFamily = "Arial"
+                    result.style.fontSize = "25px"
+                } else {
+                    var answer = numberOne * numberTwo;
+                    result.innerHTML = answer
+                }                     
         }
+
         function subtract() {
             var numberOne = document.getElementById("firstValue").value;
             var numberTwo = document.getElementById("secondValue").value;
-            var answer = numberOne - numberTwo;
-                result.innerHTML = answer         
+            if (numberOne == "" || numberTwo == "") {
+                    var error = "Error";
+                    result.innerHTML=error;
+                    result.style.color = "red"
+                    result.style.fontFamily = "Arial"
+                    result.style.fontSize = "25px"
+                } else {
+                    var answer = numberOne - numberTwo;
+                    result.innerHTML = answer
+                }                              
         }
+
         function divide() {
             var numberOne = document.getElementById("firstValue").value;
             var numberTwo = document.getElementById("secondValue").value;
-            var answer = numberOne / numberTwo;
-                result.innerHTML = answer         
+            if (numberOne == "" || numberTwo == "") {
+                    var error = "Error";
+                    result.innerHTML=error;
+                    result.style.color = "red"
+                    result.style.fontFamily = "Arial"
+                    result.style.fontSize = "25px"
+                } else {
+                    var answer = numberOne / numberTwo;
+                    result.innerHTML = answer
+                }         
         }
+
         function add() {
             var numberOne = document.getElementById("firstValue").value;
             var numberTwo = document.getElementById("secondValue").value;
-            var answer = Number(numberOne) + Number(numberTwo);
-                result.innerHTML = answer
+            if (numberOne == "" || numberTwo == "") {
+                    var error = "Error";
+                    result.innerHTML=error;
+                    result.style.color = "red"
+                    result.style.fontFamily = "Arial"
+                    result.style.fontSize = "25px"
+                } else {
+                    var answer = Number(numberOne) + Number(numberTwo);
+                    result.innerHTML = answer
+                }            
         }
     </script>
 </body>
